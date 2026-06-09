@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SeniorNest — Find & Compare Senior Care & Activities in Ontario</title>
+<meta name="description" content="Compare retirement homes, home care agencies, senior fitness programs, social clubs, medical services, and transportation in Ontario. Free value scores, accessibility info, and side-by-side comparison.">
+<meta name="keywords" content="senior care Ontario, compare retirement homes, home care agencies, assisted living, memory care, senior fitness, senior social clubs, senior transportation, elder care Canada, senior services Ottawa">
+<meta name="author" content="NestGroup Inc.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#4A5568">
+<link rel="canonical" href="https://seniornest.ca/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SeniorNest by NestGroup">
+<meta property="og:title" content="SeniorNest — Find & Compare Senior Care & Activities in Ontario">
+<meta property="og:description" content="Compare retirement homes, home care, senior fitness, and social clubs by cost, distance, and value score. Free for Ontario families.">
+<meta property="og:url" content="https://seniornest.ca/">
+<meta property="og:locale" content="en_CA">
+<meta property="og:image" content="https://seniornest.ca/images/og-seniornest.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SeniorNest — Compare Senior Care & Activities in Ontario">
+<meta name="twitter:description" content="Find retirement homes, home care, fitness programs, and social clubs for seniors. Free value scores and comparison tools.">
+<meta name="twitter:image" content="https://seniornest.ca/images/og-seniornest.png">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SeniorNest",
+  "url": "https://seniornest.ca",
+  "description": "Find and compare senior care, retirement homes, home care, fitness, and social services across Ontario.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "NestGroup",
+    "url": "https://nestgroup.ca"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://seniornest.ca/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Senior Services in Ontario",
+  "description": "Senior care, retirement living, home care, and activity providers in Ontario, Canada",
+  "itemListOrder": "https://schema.org/ItemListUnordered",
+  "numberOfItems": 16,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "item": {"@type": "LodgingBusiness", "name": "Retirement & Assisted Living Homes"}},
+    {"@type": "ListItem", "position": 2, "item": {"@type": "HomeAndConstructionBusiness", "name": "Home Care Agencies"}},
+    {"@type": "ListItem", "position": 3, "item": {"@type": "SportsActivityLocation", "name": "Senior Fitness Programs"}},
+    {"@type": "ListItem", "position": 4, "item": {"@type": "Organization", "name": "Social Clubs & Community Centres"}}
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #4A5568;
+  --primary-light: #718096;
+  --primary-bg: #EDF2F7;
+  --accent: #B7926B;
+  --accent-light: #C9A882;
+  --blue: #2B6CB0;
+  --blue-bg: #EBF4FF;
+  --green: #38A169;
+  --green-bg: #F0FFF4;
+  --yellow: #D69E2E;
+  --yellow-bg: #FFFFF0;
+  --red: #E53E3E;
+  --teal: #2B6CB0;
+  --teal-bg: #EBF4FF;
+  --gray-50: #F7FAFC;
+  --gray-100: #EDF2F7;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E0;
+  --gray-400: #A0AEC0;
+  --gray-500: #718096;
+  --gray-600: #4A5568;
+  --gray-700: #2D3748;
+  --gray-800: #1A202C;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+  --radius: 12px;
+  --radius-lg: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--gray-50);
+  color: var(--gray-800);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ─── NAV ─── */
+nav {
+  background: white;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.logo-text {
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+.logo-text .senior { color: var(--primary); }
+.logo-text .nest { color: var(--accent); }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a {
+  text-decoration: none;
+  color: var(--gray-600);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--teal); }
+.nav-btn {
+  background: var(--teal);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav-btn:hover { background: #2558A0; }
+.social-link {
+  color: var(--gray-500);
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+.social-link:hover { color: #E1306C; }
+
+/* ─── HERO ─── */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, #5A6A80 30%, var(--blue) 65%, var(--accent) 100%);
+  padding: 60px 24px 90px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+}
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  position: relative;
+}
+.hero p {
+  font-size: 18px;
+  opacity: 0.92;
+  max-width: 620px;
+  margin: 0 auto 36px;
+  position: relative;
+}
+
+/* ─── SMART SEARCH BAR ─── */
+.smart-search {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.smart-search-input {
+  width: 100%;
+  padding: 18px 60px 18px 26px;
+  border: none;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--gray-800);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  outline: none;
+  transition: box-shadow 0.3s;
+}
+.smart-search-input::placeholder { color: var(--gray-400); font-weight: 500; }
+.smart-search-input:focus { box-shadow: 0 4px 30px rgba(0,0,0,0.25); }
+.smart-search-btn {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  bottom: 6px;
+  width: 46px;
+  border: none;
+  border-radius: 50%;
+  background: var(--teal);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.smart-search-btn:hover { background: #2558A0; }
+.search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  margin-top: 8px;
+  padding: 8px;
+  display: none;
+  z-index: 50;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.search-suggestions.open { display: block; }
+.suggestion-item {
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.15s;
+}
+.suggestion-item:hover { background: var(--gray-50); }
+.suggestion-emoji { font-size: 20px; width: 28px; text-align: center; }
+.suggestion-text { flex: 1; }
+.suggestion-title { font-size: 15px; font-weight: 700; color: var(--gray-800); }
+.suggestion-sub { font-size: 12px; color: var(--gray-400); }
+.hero-quick-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  position: relative;
+}
+.quick-link {
+  padding: 8px 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.quick-link:hover { background: rgba(255,255,255,0.3); }
+
+/* ─── INTEREST PICKER ─── */
+.interest-section {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+}
+.interest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.interest-header h3 {
+  font-size: 16px;
+  color: var(--gray-700);
+  font-weight: 700;
+}
+.interest-compare-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: none;
+}
+.interest-compare-btn.visible { display: inline-flex; align-items: center; gap: 6px; }
+.interest-compare-btn:hover { background: var(--accent-light); }
+.cat-grid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.cat-item {
+  background: white;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+.cat-item:hover { border-color: var(--teal); color: var(--teal); }
+.cat-item.active,
+.cat-item.selected { border-color: var(--teal); background: var(--teal-bg); color: var(--teal); }
+.cat-item .emoji { font-size: 15px; line-height: 1; }
+.cat-item .count { font-size: 11px; color: var(--gray-400); font-weight: 600; }
+
+/* ─── SEARCH BOX ─── */
+.search-box {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  max-width: 960px;
+  margin: -44px auto 32px;
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--shadow-lg);
+}
+.search-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+.search-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  align-items: end;
+  margin-top: 12px;
+}
+.radius-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.radius-control input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--gray-200);
+  outline: none;
+}
+.radius-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--teal);
+  cursor: pointer;
+}
+.radius-value {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--teal);
+  min-width: 52px;
+}
+.search-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.search-field select,
+.search-field input {
+  width: 100%;
+  padding: 11px 13px;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--gray-700);
+  background: var(--gray-50);
+  transition: border-color 0.2s;
+}
+.search-field select:focus,
+.search-field input:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: white;
+}
+.search-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 11px 30px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.search-btn:hover { background: var(--accent-light); }
+
+/* ─── BUDGET SLIDER ─── */
+.budget-control {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.budget-control label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-700);
+  white-space: nowrap;
+}
+.budget-control input[type="range"] {
+  flex: 1;
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--green) 0%, var(--yellow) 50%, var(--red) 100%);
+  outline: none;
+}
+.budget-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--teal);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.budget-value {
+  background: var(--teal);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  min-width: 110px;
+  text-align: center;
+}
+
+/* ─── RESULTS ─── */
+.results-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.results-header h2 { font-size: 20px; color: var(--gray-800); }
+.results-count { color: var(--gray-500); font-size: 14px; font-weight: 600; }
+.sort-select {
+  padding: 8px 14px;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-600);
+  background: white;
+}
+
+/* ─── PROVIDER CARD ─── */
+.provider-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  gap: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.provider-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--teal-bg);
+}
+.provider-image {
+  width: 160px;
+  height: 120px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.provider-info { display: flex; flex-direction: column; gap: 6px; }
+.provider-name { font-size: 18px; font-weight: 800; color: var(--gray-800); }
+.provider-org { font-size: 13px; color: var(--gray-500); font-weight: 600; }
+.provider-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.provider-tag {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+.tag-retirement { background: #E9D8FD; color: #553C9A; }
+.tag-homecare { background: #FEEBC8; color: #C05621; }
+.tag-fitness { background: #C6F6D5; color: #276749; }
+.tag-social { background: #BEE3F8; color: #2A4365; }
+.tag-medical { background: #FED7D7; color: #9B2C2C; }
+.tag-transport { background: #E2E8F0; color: #2D3748; }
+.tag-meal { background: #FEFCBF; color: #744210; }
+.tag-community { background: #E0E7FF; color: #3730A3; }
+.provider-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--gray-500);
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+.provider-meta-item { display: flex; align-items: center; gap: 4px; }
+.provider-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-width: 155px;
+  flex-shrink: 0;
+}
+
+/* ─── VALUE SCORE ─── */
+.value-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.value-score-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.score-high { background: linear-gradient(135deg, #48BB78, #276749); }
+.score-med { background: linear-gradient(135deg, #ECC94B, #D69E2E); }
+.score-low { background: linear-gradient(135deg, #FC8181, #E53E3E); }
+.value-score-label { font-size: 10px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.provider-price {
+  text-align: right;
+}
+.provider-price .amount {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--gray-800);
+}
+.provider-price .period {
+  font-size: 12px;
+  color: var(--gray-400);
+  font-weight: 600;
+}
+.provider-commute {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--gray-500);
+  font-weight: 600;
+}
+.compare-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--teal);
+  cursor: pointer;
+}
+.compare-check input { accent-color: var(--teal); width: 16px; height: 16px; }
+
+/* ─── DETAIL MODAL ─── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-overlay.open { display: flex; }
+.modal {
+  background: white;
+  border-radius: var(--radius-lg);
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+.modal-header {
+  padding: 24px 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.modal-close {
+  background: var(--gray-100);
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.modal-body { padding: 16px 24px 24px; }
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.detail-item {
+  background: var(--gray-50);
+  padding: 12px 16px;
+  border-radius: var(--radius);
+}
+.detail-item .label { font-size: 11px; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.5px; }
+.detail-item .value { font-size: 17px; font-weight: 700; color: var(--gray-800); margin-top: 2px; }
+.detail-item .sub { font-size: 12px; color: var(--gray-500); font-weight: 600; }
+
+.score-breakdown {
+  background: var(--gray-50);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 16px 0;
+}
+.score-breakdown h4 { font-size: 15px; margin-bottom: 12px; color: var(--gray-700); font-weight: 700; }
+.score-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.score-bar-label { font-size: 13px; font-weight: 600; color: var(--gray-600); width: 120px; }
+.score-bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.score-bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+.score-bar-value { font-size: 13px; font-weight: 700; width: 32px; text-align: right; }
+
+.visit-btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  background: var(--teal);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.visit-btn:hover { background: #2558A0; }
+
+/* ─── COMPARE BAR ─── */
+.compare-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary);
+  color: white;
+  padding: 14px 24px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 150;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+  gap: 12px;
+}
+.compare-bar.visible { display: flex; }
+.compare-bar-left { display: flex; align-items: center; gap: 12px; flex: 1; min-width: 0; }
+.compare-bar-info { font-weight: 700; font-size: 15px; white-space: nowrap; }
+.compare-bar-items { display: flex; gap: 6px; flex-wrap: wrap; }
+.compare-bar-tag {
+  background: rgba(255,255,255,0.2);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.compare-bar-tag button {
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  line-height: 1;
+}
+.compare-bar-tag button:hover { color: white; }
+.compare-bar-btn {
+  background: white;
+  color: var(--primary);
+  border: none;
+  padding: 10px 26px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.compare-bar-btn:hover { background: var(--gray-100); }
+.compare-bar-clear {
+  background: none;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.compare-bar-clear:hover { background: rgba(255,255,255,0.1); }
+
+/* ─── COMPARE VIEW ─── */
+.compare-view {
+  display: none;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.compare-view.visible { display: block; }
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.compare-table th {
+  background: var(--teal);
+  color: white;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+.compare-table th:first-child { background: var(--gray-100); color: var(--gray-600); }
+.compare-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 15px;
+  font-weight: 600;
+}
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table td:first-child {
+  color: var(--gray-500);
+  font-weight: 700;
+  background: var(--gray-50);
+}
+.compare-best {
+  background: var(--green-bg) !important;
+  color: var(--green) !important;
+  font-weight: 700 !important;
+}
+.back-btn {
+  background: var(--gray-100);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  color: var(--gray-600);
+  margin-bottom: 20px;
+}
+
+/* ─── STATS BAR ─── */
+.stats-bar {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.stat-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+.stat-number { font-size: 30px; font-weight: 800; color: var(--teal); }
+.stat-label { font-size: 13px; font-weight: 600; color: var(--gray-500); margin-top: 2px; }
+
+/* ─── BUDGET PLANNER ─── */
+.planner-view { display: none; max-width: 1100px; margin: 0 auto; padding: 24px; }
+.planner-view.visible { display: block; }
+
+.planner-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.planner-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.planner-card h3 {
+  font-size: 17px;
+  color: var(--gray-700);
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+.budget-input-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.budget-input-row label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gray-500);
+  min-width: 110px;
+}
+.budget-input-row input {
+  width: 130px;
+  padding: 9px 12px;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+.budget-meter {
+  height: 12px;
+  background: var(--gray-100);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.budget-meter-fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.3s, background 0.3s;
+}
+.budget-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-500);
+}
+.budget-remaining-big {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+/* Care Plan Tabs */
+.care-plan-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.care-tab {
+  padding: 8px 18px;
+  border-radius: 22px;
+  border: 2px solid var(--gray-200);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: white;
+  color: var(--gray-600);
+  transition: all 0.2s;
+}
+.care-tab.active { background: var(--teal); color: white; border-color: var(--teal); }
+.care-tab.add-plan {
+  border-style: dashed;
+  color: var(--gray-400);
+}
+.care-tab.add-plan:hover { border-color: var(--teal); color: var(--teal); }
+
+/* Planned items */
+.planner-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+.planned-list {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.planned-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--gray-50);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.planned-item-info { flex: 1; }
+.planned-item-name { font-size: 14px; font-weight: 700; color: var(--gray-800); }
+.planned-item-detail { font-size: 12px; color: var(--gray-500); font-weight: 600; }
+.planned-item-cost { font-size: 16px; font-weight: 800; color: var(--gray-800); }
+.planned-item-remove {
+  background: none;
+  border: none;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  margin-left: 8px;
+}
+
+/* Charts */
+.chart-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.chart-bar-label { font-size: 13px; font-weight: 600; color: var(--gray-600); width: 100px; }
+.chart-bar-track { flex: 1; height: 22px; background: var(--gray-100); border-radius: 4px; overflow: hidden; }
+.chart-bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 10px; font-size: 11px; font-weight: 700; color: white; }
+.chart-bar-amount { font-size: 13px; font-weight: 700; color: var(--gray-700); width: 70px; text-align: right; }
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--gray-400);
+}
+.empty-state-icon { font-size: 44px; margin-bottom: 8px; }
+.empty-state-text { font-size: 15px; font-weight: 600; }
+
+/* Accessibility badge */
+.access-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: var(--blue-bg);
+  color: var(--blue);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 200;
+  background: none;
+  border: none;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background: var(--gray-700);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+@media (max-width: 1024px) {
+  .search-row { grid-template-columns: 1fr 1fr; }
+  .search-row-2 { grid-template-columns: 1fr 1fr; }
+  .stats-bar { grid-template-columns: 1fr 1fr 1fr; }
+  .hero h1 { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    z-index: 150;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    overflow-y: auto;
+  }
+  .nav-links.mobile-open { display: flex; }
+  .nav-links a { font-size: 18px; padding: 12px 0; border-bottom: 1px solid var(--gray-200); }
+  .nav-btn { width: 100%; text-align: center; padding: 14px; font-size: 16px; margin-top: 8px; }
+  .hero { padding: 40px 16px; }
+  .hero h1 { font-size: 26px; }
+  .hero p { font-size: 14px; }
+  .hero-quick-links { gap: 8px; }
+  .quick-link { font-size: 12px; padding: 6px 10px; }
+  .search-box { margin: 16px; padding: 16px; }
+  .search-row { grid-template-columns: 1fr; gap: 10px; }
+  .search-row-2 { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .search-field select, .search-field input { font-size: 16px; padding: 10px; min-height: 44px; }
+  .search-field button { min-height: 44px; font-size: 14px; }
+  .provider-card { grid-template-columns: 1fr; margin: 0 16px; }
+  .provider-image { width: 100%; height: 120px; border-radius: 10px 10px 0 0; }
+  .provider-right { flex-direction: row; align-items: center; min-width: auto; padding: 12px 16px; gap: 8px; }
+  .provider-info h3 { font-size: 16px; }
+  .stats-bar { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .modal-content { width: 95%; max-height: 90vh; margin: 5vh auto; padding: 20px; }
+  .planner-top, .planner-bottom { grid-template-columns: 1fr; }
+  .compare-bar { flex-direction: column; padding: 12px 16px; gap: 8px; }
+  .compare-bar-left { flex-wrap: wrap; }
+  .compare-bar-items { flex-wrap: wrap; }
+  .compare-table { font-size: 13px; }
+  .compare-table th, .compare-table td { padding: 8px 6px; }
+  .smart-search-input { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  nav { padding: 0 12px; }
+  .logo-text { font-size: 18px; }
+  .hero h1 { font-size: 22px; }
+  .hero p { font-size: 13px; }
+  .hero-quick-links { justify-content: center; }
+  .search-row-2 { grid-template-columns: 1fr; }
+  .stats-bar { grid-template-columns: 1fr; }
+  .provider-right { flex-direction: column; }
+  .modal-content { width: 100%; max-height: 100vh; margin: 0; border-radius: 0; }
+  .compare-table { display: block; overflow-x: auto; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo" onclick="showSearch()">
+    <span style="font-size:28px">🏠</span>
+    <div class="logo-text"><span class="senior">Senior</span><span class="nest">Nest</span></div>
+  </div>
+  <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a class="active" onclick="showSearch()">Search</a>
+    <a onclick="showCompare()">Compare</a>
+    <a onclick="showPlanner()">Budget Planner</a>
+    <a href="https://instagram.com/SeniorNest_CA" target="_blank" rel="noopener" class="social-link" title="Follow us on Instagram">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <button class="nav-btn">Sign Up Free</button>
+  </div>
+</nav>
+
+<div id="searchView">
+  <div class="hero">
+    <h1>🏡 Find Senior Care and Activities Near You</h1>
+    <p>Compare retirement homes, home care, senior fitness, social clubs, and more — by monthly cost and distance from your location.</p>
+    <div class="smart-search">
+      <input type="text" class="smart-search-input" id="smartSearch" placeholder="Try: home care under $2000, retirement homes with memory care, fitness near me..." oninput="handleSmartSearch(this.value)" onfocus="handleSmartSearch(this.value)" autocomplete="off">
+      <button class="smart-search-btn" onclick="runSmartSearch()">&#128269;</button>
+      <div class="search-suggestions" id="searchSuggestions"></div>
+    </div>
+    <div class="hero-quick-links">
+      <a class="quick-link" onclick="quickSearch('retirement homes')">🏠 Retirement Homes</a>
+      <a class="quick-link" onclick="quickSearch('home care')">🤲 Home Care</a>
+      <a class="quick-link" onclick="quickSearch('fitness')">💪 Senior Fitness</a>
+      <a class="quick-link" onclick="quickSearch('social')">🎭 Social Clubs</a>
+      <a class="quick-link" onclick="quickSearch('medical')">🏥 Medical</a>
+      <a class="quick-link" onclick="quickSearch('transportation')">🚐 Transportation</a>
+      <a class="quick-link" onclick="quickSearch('free')">🆓 Free Programs</a>
+      <a class="quick-link" onclick="quickSearch('under 2000')">💰 Under $2,000/mo</a>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <div class="search-row">
+      <div class="search-field">
+        <label>Postal Code</label>
+        <input type="text" id="postalCode" placeholder="e.g. M5G 2N2" value="M5G 2N2" maxlength="7" oninput="filterProviders()">
+      </div>
+      <div class="search-field">
+        <label>Service Type</label>
+        <select id="serviceFilter" onchange="filterProviders()">
+          <option value="all">All Services</option>
+          <option value="residential">Residential Care</option>
+          <option value="homecare">Home Care</option>
+          <option value="active">Active Lifestyle</option>
+          <option value="medical">Medical Support</option>
+          <option value="social">Social &amp; Recreation</option>
+          <option value="transport">Transportation</option>
+          <option value="meal">Meal Services</option>
+          <option value="community">Community Programs</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label>Care Level</label>
+        <select id="careLevelFilter" onchange="filterProviders()">
+          <option value="all">Any Level</option>
+          <option value="independent">Independent Living</option>
+          <option value="some_assist">Some Assistance</option>
+          <option value="assisted">Assisted Living</option>
+          <option value="memory">Memory Care</option>
+          <option value="full_care">Full Care</option>
+          <option value="home_care">Home Care</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label>Province / City</label>
+        <select id="locationFilter" onchange="filterProviders()">
+          <option value="all">All Ontario</option>
+          <optgroup label="Ontario">
+            <option value="ON">All Ontario</option>
+            <option value="toronto" selected>Toronto</option>
+            <option value="ottawa">Ottawa</option>
+            <option value="hamilton">Hamilton</option>
+            <option value="mississauga">Mississauga</option>
+            <option value="london">London</option>
+          </optgroup>
+        </select>
+      </div>
+      <button class="search-btn" onclick="filterProviders()">Search</button>
+    </div>
+    <div class="search-row-2">
+      <div class="search-field">
+        <label>&#128205; Search Radius</label>
+        <div class="radius-control">
+          <input type="range" id="radiusSlider" min="2" max="200" value="50" step="1" oninput="updateRadius()">
+          <span class="radius-value" id="radiusDisplay">50 km</span>
+        </div>
+      </div>
+      <div class="search-field" style="display:flex;align-items:end;gap:8px;font-size:14px;color:var(--gray-500);font-weight:600;padding-bottom:6px">
+        &#128205; Within <strong id="radiusText" style="color:var(--teal)">50 km</strong> of <strong id="postalText" style="color:var(--teal)">M5G 2N2</strong>
+      </div>
+      <div class="search-field"></div>
+      <div class="search-field"></div>
+    </div>
+  </div>
+
+  <div class="interest-section">
+    <div class="interest-header">
+      <h3>&#10024; Select service categories — multi-select to compare</h3>
+      <button class="interest-compare-btn" id="interestCompareBtn" onclick="compareInterests()">Compare Selected <span id="interestCount"></span></button>
+    </div>
+    <div class="cat-grid" id="interestGrid"></div>
+  </div>
+
+  <div class="budget-control">
+    <label>&#128176; Max Monthly Budget:</label>
+    <input type="range" id="budgetSlider" min="0" max="5000" value="3000" step="100" oninput="updateBudget()">
+    <div class="budget-value" id="budgetDisplay">$3,000/mo</div>
+  </div>
+
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-card">
+      <div class="stat-number" id="statTotal">16</div>
+      <div class="stat-label">Providers Found</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="statAvgPrice">$2,850</div>
+      <div class="stat-label">Avg. Monthly Cost</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="statAvgCommute">18 min</div>
+      <div class="stat-label">Avg. Distance</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" id="statBestValue">88</div>
+      <div class="stat-label">Best Value Score</div>
+    </div>
+  </div>
+
+  <div class="results-container">
+    <div class="results-header">
+      <div>
+        <h2>Results</h2>
+        <span class="results-count" id="resultsCount">Sorted by Value Score</span>
+      </div>
+      <select class="sort-select" id="sortSelect" onchange="filterProviders()">
+        <option value="score">Best Value Score</option>
+        <option value="price_low">Price: Low to High</option>
+        <option value="price_high">Price: High to Low</option>
+        <option value="commute">Shortest Commute</option>
+        <option value="rating">Highest Rated</option>
+      </select>
+    </div>
+    <div id="providerResults"></div>
+  </div>
+</div>
+
+<div id="compareView" class="compare-view">
+  <button class="back-btn" onclick="showSearch()">&#8592; Back to Results</button>
+  <h2 style="margin-bottom: 4px;">Side-by-Side Comparison</h2>
+  <p style="color:var(--gray-500);font-size:15px;margin-bottom:20px">Compare providers across categories — retirement vs home care, cost vs rating, near vs far.</p>
+  <div id="compareContent"></div>
+</div>
+
+<div id="plannerView" class="planner-view">
+  <button class="back-btn" onclick="showSearch()">&#8592; Back to Results</button>
+  <h2 style="margin-bottom: 20px;">&#128176; Senior Care Budget Planner</h2>
+
+  <div class="care-plan-tabs" id="carePlanTabs">
+    <button class="care-tab active" data-plan="primary">Primary Care</button>
+    <button class="care-tab add-plan" onclick="addCarePlan()">+ Add Plan</button>
+  </div>
+
+  <div class="planner-top">
+    <div class="planner-card">
+      <h3>&#128176; Monthly Care Budget</h3>
+      <div class="budget-input-row">
+        <label>Total Budget</label>
+        <span style="font-size:18px;font-weight:800;color:var(--gray-700)">$</span>
+        <input type="number" id="totalBudget" value="3500" min="0" step="100" onchange="updatePlanner()">
+        <span style="font-size:14px;font-weight:600;color:var(--gray-400)">/mo</span>
+      </div>
+      <div class="budget-meter">
+        <div class="budget-meter-fill" id="budgetMeterFill" style="width:0%;background:var(--green)"></div>
+      </div>
+      <div class="budget-summary">
+        <span>Spent: <strong id="budgetSpent">$0</strong></span>
+        <span>Remaining: <strong id="budgetRemaining">$3,500</strong></span>
+      </div>
+      <div class="budget-remaining-big" id="budgetRemainingBig" style="color:var(--green)">$3,500 left</div>
+    </div>
+
+    <div class="planner-card">
+      <h3>&#128200; Spending by Category</h3>
+      <div id="categoryChart"></div>
+    </div>
+  </div>
+
+  <div class="planner-bottom">
+    <div class="planned-list">
+      <h3 style="font-size:17px;color:var(--gray-700);margin-bottom:12px;font-weight:700">&#128203; Planned Services</h3>
+      <div id="plannedItems"></div>
+    </div>
+    <div class="planner-card">
+      <h3>&#128101; Cost Per Service Type</h3>
+      <div id="serviceTypeChart"></div>
+    </div>
+  </div>
+</div>
+
+<div class="compare-bar" id="compareBar">
+  <div class="compare-bar-left">
+    <div class="compare-bar-info">Compare (<span id="compareCount">0</span>)</div>
+    <div class="compare-bar-items" id="compareBarItems"></div>
+  </div>
+  <button class="compare-bar-clear" onclick="clearCompare()">Clear</button>
+  <button class="compare-bar-btn" onclick="showCompare()">Compare Now &#8594;</button>
+</div>
+
+<div class="modal-overlay" id="detailModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="provider-name" id="modalName"></div>
+        <div class="provider-org" id="modalProvider" style="margin-top:4px"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+// ─── PROVIDER DATA ───
+const providers = [
+  {
+    id: 1, name: "Chartwell Retirement Residences", provider: "Chartwell",
+    serviceType: "residential", category: "retirement", city: "toronto", province: "ON",
+    careLevel: ["independent","assisted","memory"],
+    address: "Multiple Ontario Locations",
+    url: "https://chartwell.com/",
+    hours: "24/7 Residential", accessible: true,
+    priceMonthly: 4500, priceLabel: "$3,000–$6,000/mo",
+    commuteMins: 15, commuteKm: 8,
+    rating: 4.6, ratingCount: 412,
+    description: "Ontario's largest retirement home operator with 200+ communities province-wide. Offers independent living, assisted living, and memory care suites with restaurant-style dining, activity programs, wellness centres, and on-site medical support.",
+    tags: ["retirement","residential"],
+    emoji: "🏡",
+    color: "#4A5568",
+    scoreBreakdown: { cost: 55, commute: 88, coverage: 90, rating: 92, extras: 85 }
+  },
+  {
+    id: 2, name: "Amica Senior Lifestyles", provider: "Amica",
+    serviceType: "residential", category: "retirement", city: "toronto", province: "ON",
+    careLevel: ["independent","assisted","memory"],
+    address: "Toronto, Ontario",
+    url: "https://www.amica.ca/",
+    hours: "24/7 Residential", accessible: true,
+    priceMonthly: 6500, priceLabel: "$$$$",
+    commuteMins: 20, commuteKm: 12,
+    rating: 4.8, ratingCount: 287,
+    description: "Luxury retirement living with fine dining, spa services, concierge, and curated social programs. Independent living, assisted living, and memory care. Award-winning design and culinary experiences.",
+    tags: ["retirement","residential"],
+    emoji: "✨",
+    color: "#553C9A",
+    scoreBreakdown: { cost: 30, commute: 82, coverage: 95, rating: 96, extras: 92 }
+  },
+  {
+    id: 3, name: "Delmanor Senior Living", provider: "Delmanor",
+    serviceType: "residential", category: "retirement", city: "toronto", province: "ON",
+    careLevel: ["independent","assisted"],
+    address: "Toronto & GTA",
+    url: "https://www.delmanor.com/",
+    hours: "24/7 Residential", accessible: true,
+    priceMonthly: 5500, priceLabel: "$$$–$$$$",
+    commuteMins: 25, commuteKm: 14,
+    rating: 4.7, ratingCount: 198,
+    description: "Condo-style retirement residences with fine dining, spa, wellness programs, and concierge service. Upscale communities in Toronto and GTA with beautifully designed suites and social spaces.",
+    tags: ["retirement","residential"],
+    emoji: "🏢",
+    color: "#2C7A7B",
+    scoreBreakdown: { cost: 40, commute: 75, coverage: 88, rating: 94, extras: 88 }
+  },
+  {
+    id: 4, name: "Schlegel Villages", provider: "Schlegel",
+    serviceType: "residential", category: "retirement", city: "toronto", province: "ON",
+    careLevel: ["independent","assisted","memory","full_care"],
+    address: "Multiple Ontario Locations",
+    url: "https://schlegelvillages.com/",
+    hours: "24/7 Residential", accessible: true,
+    priceMonthly: 3200, priceLabel: "$$–$$$",
+    commuteMins: 22, commuteKm: 13,
+    rating: 4.5, ratingCount: 356,
+    description: "Community-focused retirement villages offering long-term care, retirement living, and supportive housing. Strong emphasis on community events, activity programming, and intergenerational programs.",
+    tags: ["retirement","residential"],
+    emoji: "🏘️",
+    color: "#2D3748",
+    scoreBreakdown: { cost: 70, commute: 80, coverage: 85, rating: 90, extras: 80 }
+  },
+  {
+    id: 5, name: "Hazelton Place", provider: "Hazelton",
+    serviceType: "residential", category: "retirement", city: "toronto", province: "ON",
+    careLevel: ["memory","assisted"],
+    address: "Yorkville, Toronto",
+    url: "https://www.hazeltonplace.com/",
+    hours: "24/7 Residential", accessible: true,
+    priceMonthly: 5800, priceLabel: "$$$–$$$$",
+    commuteMins: 18, commuteKm: 9,
+    rating: 4.6, ratingCount: 134,
+    description: "Boutique memory care and assisted living residence in the heart of Yorkville, Toronto. Piano lounge, cultural programming, and intimate community setting in a historic building near the ROM.",
+    tags: ["retirement","residential"],
+    emoji: "🎹",
+    color: "#702459",
+    scoreBreakdown: { cost: 38, commute: 84, coverage: 80, rating: 92, extras: 78 }
+  },
+  {
+    id: 6, name: "Bayshore HealthCare", provider: "Bayshore",
+    serviceType: "homecare", category: "homecare", city: "toronto", province: "ON",
+    careLevel: ["home_care","some_assist","full_care"],
+    address: "Province-Wide, Ontario",
+    url: "https://www.bayshore.ca/",
+    hours: "Flexible, 24/7 Available", accessible: true,
+    priceMonthly: 2200, priceLabel: "$$–$$$",
+    commuteMins: 10, commuteKm: 5,
+    rating: 4.5, ratingCount: 623,
+    description: "Since 1966, Bayshore delivers nursing care, personal care, companionship, and respite services in the home. Province-wide coverage with certified healthcare professionals. OHIP-covered services available.",
+    tags: ["homecare"],
+    emoji: "🤲",
+    color: "#C05621",
+    scoreBreakdown: { cost: 75, commute: 95, coverage: 90, rating: 90, extras: 80 }
+  },
+  {
+    id: 7, name: "ComForCare Home Care", provider: "ComForCare",
+    serviceType: "homecare", category: "homecare", city: "toronto", province: "ON",
+    careLevel: ["home_care","memory","some_assist"],
+    address: "Toronto & GTA",
+    url: "https://www.comforcare.ca/",
+    hours: "Flexible scheduling", accessible: true,
+    priceMonthly: 2400, priceLabel: "$$–$$$",
+    commuteMins: 12, commuteKm: 6,
+    rating: 4.6, ratingCount: 289,
+    description: "Specializing in dementia care, respite care, and personal care services. Trained DementiaWise caregivers, companionship, meal preparation, medication reminders, and light housekeeping.",
+    tags: ["homecare"],
+    emoji: "💙",
+    color: "#2B6CB0",
+    scoreBreakdown: { cost: 70, commute: 92, coverage: 85, rating: 92, extras: 78 }
+  },
+  {
+    id: 8, name: "Comfort Keepers", provider: "Comfort Keepers",
+    serviceType: "homecare", category: "homecare", city: "toronto", province: "ON",
+    careLevel: ["home_care","some_assist","independent"],
+    address: "Multiple Ontario Locations",
+    url: "https://www.comfortkeepers.ca/",
+    hours: "Flexible, 24/7 Available", accessible: true,
+    priceMonthly: 1800, priceLabel: "$$",
+    commuteMins: 10, commuteKm: 5,
+    rating: 4.4, ratingCount: 412,
+    description: "Interactive Caregiving approach focuses on physical, mental, and social engagement. Services include companion care, personal care, meal preparation, and transportation. Technology-enabled monitoring available.",
+    tags: ["homecare"],
+    emoji: "🏠",
+    color: "#276749",
+    scoreBreakdown: { cost: 82, commute: 95, coverage: 82, rating: 88, extras: 75 }
+  },
+  {
+    id: 9, name: "North York Seniors Centre", provider: "NYSC",
+    serviceType: "community", category: "social", city: "toronto", province: "ON",
+    careLevel: ["independent","some_assist"],
+    address: "North York, Toronto",
+    url: "https://nyseniors.org/",
+    hours: "Mon–Fri 9am–5pm", accessible: true,
+    priceMonthly: 50, priceLabel: "Free–$",
+    commuteMins: 20, commuteKm: 11,
+    rating: 4.7, ratingCount: 312,
+    description: "Comprehensive programs for Toronto seniors including social programs, active living classes, day programs, technology workshops, and community connections. Serving North York and beyond since 1972.",
+    tags: ["social","community"],
+    emoji: "🎭",
+    color: "#2A4365",
+    scoreBreakdown: { cost: 98, commute: 80, coverage: 70, rating: 94, extras: 82 }
+  },
+  {
+    id: 10, name: "City of Ottawa Senior Programs", provider: "City of Ottawa",
+    serviceType: "community", category: "social", city: "ottawa", province: "ON",
+    careLevel: ["independent","some_assist"],
+    address: "Ottawa, Ontario",
+    url: "https://ottawa.ca/en/recreation-and-parks/older-adult-activities",
+    hours: "Various, see website", accessible: true,
+    priceMonthly: 40, priceLabel: "Free–$",
+    commuteMins: 14, commuteKm: 7,
+    rating: 4.4, ratingCount: 487,
+    description: "Extensive catalog of programs for adults 55+ including swimming, dancing, walking clubs, fitness classes, arts and crafts, and social events. Accessible facilities across Ottawa.",
+    tags: ["social","community"],
+    emoji: "🏊",
+    color: "#276749",
+    scoreBreakdown: { cost: 99, commute: 86, coverage: 75, rating: 88, extras: 80 }
+  },
+  {
+    id: 11, name: "University Settlement Senior Services", provider: "University Settlement",
+    serviceType: "community", category: "social", city: "toronto", province: "ON",
+    careLevel: ["independent","some_assist"],
+    address: "Toronto",
+    url: "https://universitysettlement.ca/seniors/",
+    hours: "Mon–Fri 9am–4pm", accessible: true,
+    priceMonthly: 0, priceLabel: "Free–$",
+    commuteMins: 22, commuteKm: 12,
+    rating: 4.6, ratingCount: 178,
+    description: "Exercise classes, balance training, gentle fitness, social groups, and multicultural programs. Subsidized programs available for low-income seniors. Drop-in and registered options.",
+    tags: ["social","community"],
+    emoji: "🤸",
+    color: "#744210",
+    scoreBreakdown: { cost: 100, commute: 76, coverage: 65, rating: 92, extras: 78 }
+  },
+  {
+    id: 12, name: "YMCA of Greater Toronto", provider: "YMCA",
+    serviceType: "active", category: "fitness", city: "toronto", province: "ON",
+    careLevel: ["independent","some_assist"],
+    address: "Multiple GTA Locations",
+    url: "https://www.ymcagta.org/health-and-fitness/older-adult-activities",
+    hours: "Mon–Sun 6am–10pm", accessible: true,
+    priceMonthly: 55, priceLabel: "$$",
+    commuteMins: 12, commuteKm: 6,
+    rating: 4.5, ratingCount: 634,
+    description: "Older adult fitness programs including water exercise, stretching, low-impact aerobics, and walking groups. Trained instructors, social connections, and accessible facilities. Financial assistance available.",
+    tags: ["fitness","active"],
+    emoji: "💪",
+    color: "#276749",
+    scoreBreakdown: { cost: 95, commute: 90, coverage: 80, rating: 90, extras: 82 }
+  },
+  {
+    id: 13, name: "Santé Active", provider: "Sante Active",
+    serviceType: "active", category: "fitness", city: "toronto", province: "ON",
+    careLevel: ["independent","some_assist","assisted"],
+    address: "Toronto & Ottawa",
+    url: "https://www.santeactive.ca/",
+    hours: "Flexible scheduling", accessible: true,
+    priceMonthly: 280, priceLabel: "$$–$$$",
+    commuteMins: 8, commuteKm: 3,
+    rating: 4.8, ratingCount: 123,
+    description: "In-home and retirement home fitness services by certified personal trainers specializing in seniors. Tailored programs for mobility, strength, balance, and fall prevention. Flexible scheduling.",
+    tags: ["fitness","active"],
+    emoji: "🏋️",
+    color: "#22543D",
+    scoreBreakdown: { cost: 80, commute: 96, coverage: 88, rating: 96, extras: 85 }
+  },
+  {
+    id: 14, name: "Beaches Sandbox", provider: "Beaches Sandbox",
+    serviceType: "active", category: "fitness", city: "toronto", province: "ON",
+    careLevel: ["independent"],
+    address: "The Beaches, Toronto",
+    url: "https://www.beachessandbox.com/adult-and-senior-programs",
+    hours: "Various class times", accessible: true,
+    priceMonthly: 120, priceLabel: "$–$$",
+    commuteMins: 28, commuteKm: 16,
+    rating: 4.7, ratingCount: 89,
+    description: "Chair yoga, gentle upper body workouts, choir, and social programs in a welcoming community space. Focused on fun and connection. Programs designed for varying mobility levels.",
+    tags: ["fitness","social"],
+    emoji: "🧘",
+    color: "#553C9A",
+    scoreBreakdown: { cost: 90, commute: 62, coverage: 72, rating: 94, extras: 76 }
+  },
+  {
+    id: 15, name: "City of Toronto Senior Services", provider: "City of Toronto",
+    serviceType: "community", category: "community", city: "toronto", province: "ON",
+    careLevel: ["independent","some_assist"],
+    address: "City-Wide, Toronto",
+    url: "https://www.toronto.ca/community-people/children-parenting/seniors-services/",
+    hours: "Varies by location", accessible: true,
+    priceMonthly: 0, priceLabel: "Free",
+    commuteMins: 10, commuteKm: 4,
+    rating: 4.4, ratingCount: 892,
+    description: "Free recreation drop-ins, social programs, falls prevention, caregiver support, and community connections across Toronto. Tax clinics, legal aid, and transportation assistance also available.",
+    tags: ["community"],
+    emoji: "🏛️",
+    color: "#2D3748",
+    scoreBreakdown: { cost: 100, commute: 92, coverage: 72, rating: 88, extras: 86 }
+  },
+  {
+    id: 16, name: "ComfortLife Ontario", provider: "ComfortLife",
+    serviceType: "community", category: "community", city: "toronto", province: "ON",
+    careLevel: ["independent","assisted","memory","full_care"],
+    address: "Ontario-Wide Hub",
+    url: "https://www.comfortlife.ca/",
+    hours: "Online Resource — Always Available", accessible: true,
+    priceMonthly: 0, priceLabel: "Free Resource",
+    commuteMins: 0, commuteKm: 0,
+    rating: 4.6, ratingCount: 234,
+    description: "Ontario's largest online resource for retirement home comparisons, reviews, and family guides. Search 700+ retirement homes, read verified reviews, and get free guided placement assistance.",
+    tags: ["community"],
+    emoji: "💻",
+    color: "#2B6CB0",
+    scoreBreakdown: { cost: 100, commute: 100, coverage: 85, rating: 92, extras: 90 }
+  }
+];
+
+// ─── CATEGORIES ───
+const categories = [
+  { key: "all", label: "All Services", emoji: "✨" },
+  { key: "retirement", label: "Retirement Homes", emoji: "🏡" },
+  { key: "homecare", label: "Home Care", emoji: "🤲" },
+  { key: "fitness", label: "Senior Fitness", emoji: "💪" },
+  { key: "social", label: "Social & Activities", emoji: "🎭" },
+  { key: "community", label: "Community Centres", emoji: "🏛️" },
+  { key: "medical", label: "Medical Support", emoji: "🏥" },
+  { key: "transport", label: "Transportation", emoji: "🚐" },
+  { key: "meal", label: "Meal Services", emoji: "🍽️" },
+];
+
+// ─── SUGGESTION DATA ───
+const suggestionData = [
+  { emoji: "🏡", title: "Retirement Homes", sub: "Independent, Assisted, Memory Care", key: "retirement homes" },
+  { emoji: "🤲", title: "Home Care Services", sub: "In-home nursing, personal care, companionship", key: "home care" },
+  { emoji: "💪", title: "Senior Fitness", sub: "Chair yoga, aquafit, gentle exercise", key: "fitness" },
+  { emoji: "🎭", title: "Social & Activities", sub: "Clubs, programs, community events", key: "social" },
+  { emoji: "🏥", title: "Medical Support", sub: "Clinics, physio, nursing care", key: "medical" },
+  { emoji: "🚐", title: "Senior Transportation", sub: "Accessible rides, Wheel-Trans", key: "transportation" },
+  { emoji: "🍽️", title: "Meal Services", sub: "Meal delivery, dining programs", key: "meal" },
+  { emoji: "🧠", title: "Memory Care", sub: "Dementia & Alzheimer's care", key: "memory care" },
+  { emoji: "💰", title: "Under $2,000/mo", sub: "Budget-friendly services", key: "under 2000" },
+  { emoji: "🆓", title: "Free Programs", sub: "No-cost community services", key: "free" },
+];
+
+// ─── STATE ───
+let compareList = [];
+let plannedServices = [];
+let activeCategories = new Set(["all"]);
+
+// ─── INIT ───
+function init() {
+  renderInterestGrid();
+  filterProviders();
+  updatePlanner();
+}
+
+function renderInterestGrid() {
+  const grid = document.getElementById("interestGrid");
+  grid.innerHTML = categories.map(cat => `
+    <div class="cat-item ${cat.key === 'all' ? 'active' : ''}" onclick="toggleCategory('${cat.key}', this)">
+      <span class="emoji">${cat.emoji}</span>
+      ${cat.label}
+      <span class="count">${cat.key === 'all' ? providers.length : providers.filter(p => p.category === cat.key || p.serviceType === cat.key).length}</span>
+    </div>
+  `).join('');
+}
+
+function toggleCategory(key, el) {
+  if (key === 'all') {
+    activeCategories = new Set(['all']);
+    document.querySelectorAll('.cat-item').forEach(i => i.classList.remove('active'));
+    el.classList.add('active');
+  } else {
+    if (activeCategories.has('all')) activeCategories.delete('all');
+    document.querySelectorAll('.cat-item').forEach(i => { if (i.textContent.trim().startsWith('✨')) i.classList.remove('active'); });
+    if (activeCategories.has(key)) {
+      activeCategories.delete(key);
+      el.classList.remove('active');
+    } else {
+      activeCategories.add(key);
+      el.classList.add('active');
+    }
+    if (activeCategories.size === 0) {
+      activeCategories.add('all');
+      document.querySelectorAll('.cat-item').forEach(i => { if (i.textContent.trim().startsWith('✨')) i.classList.add('active'); });
+    }
+  }
+  updateInterestCompareBtn();
+  filterProviders();
+}
+
+function updateInterestCompareBtn() {
+  const btn = document.getElementById('interestCompareBtn');
+  const count = activeCategories.has('all') ? 0 : activeCategories.size;
+  const countEl = document.getElementById('interestCount');
+  if (count >= 2) {
+    btn.classList.add('visible');
+    countEl.textContent = `(${count})`;
+  } else {
+    btn.classList.remove('visible');
+  }
+}
+
+function compareInterests() {
+  const catProviders = providers.filter(p => activeCategories.has(p.category) || activeCategories.has(p.serviceType));
+  compareList = catProviders.slice(0, 4).map(p => p.id);
+  showCompare();
+}
+
+// ─── SMART SEARCH ───
+function handleSmartSearch(val) {
+  const suggestions = document.getElementById('searchSuggestions');
+  if (!val || val.length < 2) {
+    suggestions.classList.remove('open');
+    return;
+  }
+  const lower = val.toLowerCase();
+  const matches = suggestionData.filter(s => s.title.toLowerCase().includes(lower) || s.sub.toLowerCase().includes(lower) || s.key.includes(lower));
+  if (matches.length === 0) { suggestions.classList.remove('open'); return; }
+  suggestions.innerHTML = matches.map(s => `
+    <div class="suggestion-item" onclick="quickSearch('${s.key}')">
+      <span class="suggestion-emoji">${s.emoji}</span>
+      <div class="suggestion-text">
+        <div class="suggestion-title">${s.title}</div>
+        <div class="suggestion-sub">${s.sub}</div>
+      </div>
+    </div>
+  `).join('');
+  suggestions.classList.add('open');
+}
+
+function runSmartSearch() {
+  const val = document.getElementById('smartSearch').value;
+  quickSearch(val);
+  document.getElementById('searchSuggestions').classList.remove('open');
+}
+
+function quickSearch(key) {
+  const lower = key.toLowerCase();
+  document.getElementById('smartSearch').value = '';
+  document.getElementById('searchSuggestions').classList.remove('open');
+  if (lower.includes('retirement') || lower.includes('home')) {
+    setServiceFilter('residential');
+  } else if (lower.includes('home care') || lower.includes('homecare') || lower.includes('nursing')) {
+    setServiceFilter('homecare');
+  } else if (lower.includes('fitness') || lower.includes('yoga') || lower.includes('exercise')) {
+    setServiceFilter('active');
+  } else if (lower.includes('social') || lower.includes('activit') || lower.includes('club')) {
+    setServiceFilter('social');
+  } else if (lower.includes('transport')) {
+    setServiceFilter('transport');
+  } else if (lower.includes('meal') || lower.includes('food') || lower.includes('dining')) {
+    setServiceFilter('meal');
+  } else if (lower.includes('free') || lower.includes('0')) {
+    document.getElementById('budgetSlider').value = 200;
+    updateBudget();
+  } else if (lower.includes('under 2000') || lower.includes('budget')) {
+    document.getElementById('budgetSlider').value = 2000;
+    updateBudget();
+  }
+  filterProviders();
+}
+
+function setServiceFilter(val) {
+  document.getElementById('serviceFilter').value = val;
+}
+
+// ─── SCORE CALCULATION ───
+function calcScore(p) {
+  const { cost, commute, coverage, rating, extras } = p.scoreBreakdown;
+  return Math.round((cost * 0.25 + commute * 0.2 + coverage * 0.2 + rating * 0.25 + extras * 0.1));
+}
+
+function getScoreClass(s) {
+  if (s >= 80) return 'score-high';
+  if (s >= 60) return 'score-med';
+  return 'score-low';
+}
+
+function getScoreBarColor(s) {
+  if (s >= 80) return '#48BB78';
+  if (s >= 60) return '#ECC94B';
+  return '#FC8181';
+}
+
+// ─── FILTER + RENDER ───
+function filterProviders() {
+  const postalEl = document.getElementById('postalCode');
+  const serviceVal = document.getElementById('serviceFilter').value;
+  const careLevelVal = document.getElementById('careLevelFilter').value;
+  const locationVal = document.getElementById('locationFilter').value;
+  const radiusVal = parseInt(document.getElementById('radiusSlider').value);
+  const budgetVal = parseInt(document.getElementById('budgetSlider').value);
+  const sortVal = document.getElementById('sortSelect').value;
+  const postalCode = postalEl ? postalEl.value : '';
+
+  document.getElementById('postalText').textContent = postalCode || 'Your Location';
+  document.getElementById('radiusText').textContent = radiusVal + ' km';
+
+  let filtered = providers.filter(p => {
+    if (!activeCategories.has('all') && !activeCategories.has(p.category) && !activeCategories.has(p.serviceType)) return false;
+    if (serviceVal !== 'all' && p.serviceType !== serviceVal && p.category !== serviceVal) return false;
+    if (careLevelVal !== 'all' && !p.careLevel.includes(careLevelVal)) return false;
+    if (locationVal !== 'all' && locationVal !== 'ON' && p.city !== locationVal) return false;
+    if (budgetVal > 0 && p.priceMonthly > budgetVal) return false;
+    if (p.commuteKm > radiusVal) return false;
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    if (sortVal === 'score') return calcScore(b) - calcScore(a);
+    if (sortVal === 'price_low') return a.priceMonthly - b.priceMonthly;
+    if (sortVal === 'price_high') return b.priceMonthly - a.priceMonthly;
+    if (sortVal === 'commute') return a.commuteMins - b.commuteMins;
+    if (sortVal === 'rating') return b.rating - a.rating;
+    return 0;
+  });
+
+  updateStats(filtered);
+  renderResults(filtered);
+}
+
+function updateStats(filtered) {
+  document.getElementById('statTotal').textContent = filtered.length;
+  const avgPrice = filtered.length > 0 ? Math.round(filtered.reduce((s, p) => s + p.priceMonthly, 0) / filtered.length) : 0;
+  document.getElementById('statAvgPrice').textContent = avgPrice > 0 ? '$' + avgPrice.toLocaleString() : '$0';
+  const avgCommute = filtered.length > 0 ? Math.round(filtered.reduce((s, p) => s + p.commuteMins, 0) / filtered.length) : 0;
+  document.getElementById('statAvgCommute').textContent = avgCommute + ' min';
+  const bestScore = filtered.length > 0 ? Math.max(...filtered.map(p => calcScore(p))) : 0;
+  document.getElementById('statBestValue').textContent = bestScore;
+  document.getElementById('resultsCount').textContent = filtered.length + ' provider' + (filtered.length !== 1 ? 's' : '') + ' — Sorted by ' + document.getElementById('sortSelect').options[document.getElementById('sortSelect').selectedIndex].text;
+}
+
+function renderResults(filtered) {
+  const container = document.getElementById('providerResults');
+  if (filtered.length === 0) {
+    container.innerHTML = `<div class="empty-state"><div class="empty-state-icon">🔍</div><div class="empty-state-text">No providers match your criteria. Try adjusting your filters or increasing the search radius.</div></div>`;
+    return;
+  }
+  container.innerHTML = filtered.map(p => {
+    const score = calcScore(p);
+    const isCompared = compareList.includes(p.id);
+    const tagHTML = p.tags.map(t => `<span class="provider-tag tag-${t}">${t.replace('homecare','Home Care').replace('retirement','Retirement').replace('fitness','Fitness').replace('social','Social').replace('community','Community').replace('medical','Medical').replace('transport','Transport').replace('meal','Meal').replace('active','Active Living')}</span>`).join('');
+    return `
+    <div class="provider-card" onclick="openModal(${p.id})">
+      <div class="provider-image" style="background:${p.color}20;">${p.emoji}</div>
+      <div class="provider-info">
+        <div class="provider-name">${p.name}</div>
+        <div class="provider-org">${p.provider} · ${p.address}</div>
+        <div class="provider-tags">${tagHTML}${p.accessible ? '<span class="access-badge">♿ Accessible</span>' : ''}</div>
+        <div class="provider-meta">
+          <span class="provider-meta-item">⭐ ${p.rating} (${p.ratingCount})</span>
+          <span class="provider-meta-item">🕐 ${p.hours}</span>
+          ${p.commuteMins > 0 ? `<span class="provider-meta-item">📍 ${p.commuteMins} min · ${p.commuteKm} km</span>` : '<span class="provider-meta-item">📍 Online / Province-Wide</span>'}
+        </div>
+      </div>
+      <div class="provider-right">
+        <div class="value-score">
+          <div class="value-score-circle ${getScoreClass(score)}">${score}</div>
+          <div class="value-score-label">Value</div>
+        </div>
+        <div class="provider-price">
+          <div class="amount">${p.priceLabel || (p.priceMonthly > 0 ? '$' + p.priceMonthly.toLocaleString() : 'Free')}</div>
+          ${p.priceMonthly > 0 ? '<div class="period">/month</div>' : ''}
+        </div>
+        ${p.commuteMins > 0 ? `<div class="provider-commute">📍 ${p.commuteMins} min away</div>` : ''}
+        <label class="compare-check" onclick="event.stopPropagation()">
+          <input type="checkbox" ${isCompared ? 'checked' : ''} onchange="toggleCompare(${p.id}, '${p.name}', this)"> Compare
+        </label>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ─── COMPARE ───
+function toggleCompare(id, name, cb) {
+  if (cb.checked) {
+    if (compareList.length >= 4) {
+      cb.checked = false;
+      alert('Maximum 4 providers can be compared at once.');
+      return;
+    }
+    compareList.push(id);
+  } else {
+    compareList = compareList.filter(i => i !== id);
+  }
+  updateCompareBar();
+}
+
+function updateCompareBar() {
+  const bar = document.getElementById('compareBar');
+  const count = document.getElementById('compareCount');
+  const items = document.getElementById('compareBarItems');
+  if (compareList.length === 0) {
+    bar.classList.remove('visible');
+    return;
+  }
+  bar.classList.add('visible');
+  count.textContent = compareList.length;
+  items.innerHTML = compareList.map(id => {
+    const p = providers.find(x => x.id === id);
+    return `<div class="compare-bar-tag">${p.emoji} ${p.name.split(' ')[0]} <button onclick="removeFromCompare(${id})">×</button></div>`;
+  }).join('');
+}
+
+function removeFromCompare(id) {
+  compareList = compareList.filter(i => i !== id);
+  updateCompareBar();
+  filterProviders();
+}
+
+function clearCompare() {
+  compareList = [];
+  updateCompareBar();
+  filterProviders();
+}
+
+function showCompare() {
+  if (compareList.length < 2) {
+    alert('Please select at least 2 providers to compare (use the checkboxes on each provider card).');
+    return;
+  }
+  document.getElementById('searchView').style.display = 'none';
+  document.getElementById('compareView').classList.add('visible');
+  document.getElementById('plannerView').classList.remove('visible');
+  renderCompareTable();
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.querySelectorAll('.nav-links a')[1].classList.add('active');
+}
+
+function renderCompareTable() {
+  const selected = compareList.map(id => providers.find(p => p.id === id)).filter(Boolean);
+  const rows = [
+    { label: "Type", fn: p => p.serviceType.replace('residential','Residential Care').replace('homecare','Home Care').replace('active','Active Lifestyle').replace('community','Community') },
+    { label: "Care Levels", fn: p => p.careLevel.map(c => c.replace('_',' ')).join(', ') },
+    { label: "Location", fn: p => p.city.charAt(0).toUpperCase() + p.city.slice(1) + ', ' + p.province },
+    { label: "Monthly Cost", fn: p => p.priceMonthly > 0 ? '$' + p.priceMonthly.toLocaleString() + '/mo' : 'Free', numeric: true, lower_better: true },
+    { label: "Distance", fn: p => p.commuteKm > 0 ? p.commuteKm + ' km' : 'Online', numeric: true, lower_better: true },
+    { label: "Rating", fn: p => '⭐ ' + p.rating + ' (' + p.ratingCount + ')', numeric: true, lower_better: false },
+    { label: "Accessible", fn: p => p.accessible ? '✅ Yes' : '—' },
+    { label: "Value Score", fn: p => calcScore(p), numeric: true, lower_better: false },
+    { label: "Cost Score", fn: p => p.scoreBreakdown.cost + '/100' },
+    { label: "Coverage Score", fn: p => p.scoreBreakdown.coverage + '/100' },
+    { label: "Hours", fn: p => p.hours },
+  ];
+
+  let html = `<table class="compare-table">
+    <thead><tr><th>Feature</th>${selected.map(p => `<th>${p.emoji} ${p.name}</th>`).join('')}</tr></thead>
+    <tbody>`;
+
+  rows.forEach(row => {
+    const vals = selected.map(p => row.fn(p));
+    html += `<tr><td>${row.label}</td>`;
+    if (row.numeric) {
+      const nums = selected.map(p => {
+        const v = row.fn(p);
+        return typeof v === 'number' ? v : parseFloat(String(v).replace(/[^0-9.]/g, '')) || 0;
+      });
+      const best = row.lower_better ? Math.min(...nums) : Math.max(...nums);
+      html += selected.map((p, i) => {
+        const isBest = nums[i] === best;
+        return `<td class="${isBest ? 'compare-best' : ''}">${vals[i]}</td>`;
+      }).join('');
+    } else {
+      html += vals.map(v => `<td>${v}</td>`).join('');
+    }
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+
+  // Score breakdown
+  html += `<div style="margin-top:24px"><h3 style="font-size:18px;margin-bottom:16px;font-weight:800">Score Breakdown</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;">`;
+  selected.forEach(p => {
+    const score = calcScore(p);
+    const scoreClass = getScoreClass(score);
+    html += `<div style="background:white;border-radius:12px;padding:16px;box-shadow:var(--shadow);">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div class="value-score-circle ${scoreClass}" style="width:44px;height:44px;font-size:16px;">${score}</div>
+        <div style="font-weight:800;font-size:14px;">${p.name}</div>
+      </div>`;
+    [['Cost', p.scoreBreakdown.cost], ['Commute', p.scoreBreakdown.commute], ['Coverage', p.scoreBreakdown.coverage], ['Rating', p.scoreBreakdown.rating], ['Extras', p.scoreBreakdown.extras]].forEach(([label, val]) => {
+      html += `<div class="score-bar-row" style="margin-bottom:6px;">
+        <div class="score-bar-label" style="width:70px;font-size:12px;">${label}</div>
+        <div class="score-bar-track"><div class="score-bar-fill" style="width:${val}%;background:${getScoreBarColor(val)}"></div></div>
+        <div class="score-bar-value" style="font-size:12px;">${val}</div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  html += '</div></div>';
+
+  document.getElementById('compareContent').innerHTML = html;
+}
+
+// ─── MODAL ───
+function openModal(id) {
+  const p = providers.find(x => x.id === id);
+  if (!p) return;
+  const score = calcScore(p);
+  document.getElementById('modalName').textContent = p.emoji + ' ' + p.name;
+  document.getElementById('modalProvider').textContent = p.provider + ' · ' + p.address;
+  const body = document.getElementById('modalBody');
+  body.innerHTML = `
+    <p style="color:var(--gray-600);font-size:15px;margin-bottom:16px;line-height:1.6;">${p.description}</p>
+    <div class="detail-grid">
+      <div class="detail-item"><div class="label">Monthly Cost</div><div class="value">${p.priceMonthly > 0 ? '$' + p.priceMonthly.toLocaleString() : 'Free'}</div><div class="sub">${p.priceLabel}</div></div>
+      <div class="detail-item"><div class="label">Rating</div><div class="value">⭐ ${p.rating}</div><div class="sub">${p.ratingCount} reviews</div></div>
+      <div class="detail-item"><div class="label">Distance</div><div class="value">${p.commuteKm > 0 ? p.commuteKm + ' km' : 'Online'}</div><div class="sub">${p.commuteMins > 0 ? '~' + p.commuteMins + ' min commute' : 'Province-Wide'}</div></div>
+      <div class="detail-item"><div class="label">Accessibility</div><div class="value">${p.accessible ? '♿ Accessible' : 'See website'}</div><div class="sub">Wheelchair, walker friendly</div></div>
+      <div class="detail-item"><div class="label">Hours</div><div class="value" style="font-size:13px;">${p.hours}</div><div class="sub">&nbsp;</div></div>
+      <div class="detail-item"><div class="label">Care Levels</div><div class="value" style="font-size:13px;">${p.careLevel.map(c => c.replace('_',' ')).join(', ')}</div><div class="sub">&nbsp;</div></div>
+    </div>
+    <div class="score-breakdown">
+      <h4>Value Score: ${score}/100</h4>
+      ${[['Cost', p.scoreBreakdown.cost], ['Commute / Distance', p.scoreBreakdown.commute], ['Coverage & Services', p.scoreBreakdown.coverage], ['Rating & Reviews', p.scoreBreakdown.rating], ['Extras & Amenities', p.scoreBreakdown.extras]].map(([label, val]) => `
+        <div class="score-bar-row">
+          <div class="score-bar-label">${label}</div>
+          <div class="score-bar-track"><div class="score-bar-fill" style="width:${val}%;background:${getScoreBarColor(val)}"></div></div>
+          <div class="score-bar-value">${val}</div>
+        </div>
+      `).join('')}
+    </div>
+    <button class="compare-check" style="margin-bottom:10px;font-size:14px;" onclick="toggleCompareFromModal(${p.id}, '${p.name}')">
+      <input type="checkbox" ${compareList.includes(p.id) ? 'checked' : ''} style="accent-color:var(--teal);width:16px;height:16px;"> Add to Compare
+    </button>
+    <button onclick="addToPlanner(${p.id})" style="display:block;width:100%;padding:12px;background:var(--primary-bg);color:var(--primary);border:2px solid var(--primary);border-radius:10px;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;margin-bottom:10px;transition:0.2s;" onmouseover="this.style.background='var(--gray-200)'" onmouseout="this.style.background='var(--primary-bg)'">
+      📋 Add to Budget Planner
+    </button>
+    <a href="${p.url}" target="_blank" rel="noopener" class="visit-btn">Visit Website →</a>
+  `;
+  document.getElementById('detailModal').classList.add('open');
+}
+
+function toggleCompareFromModal(id, name) {
+  if (compareList.includes(id)) {
+    compareList = compareList.filter(i => i !== id);
+  } else {
+    if (compareList.length >= 4) { alert('Maximum 4 providers can be compared.'); return; }
+    compareList.push(id);
+  }
+  updateCompareBar();
+}
+
+function closeModal() {
+  document.getElementById('detailModal').classList.remove('open');
+}
+document.getElementById('detailModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+// ─── VIEWS ───
+function showSearch() {
+  document.getElementById('searchView').style.display = '';
+  document.getElementById('compareView').classList.remove('visible');
+  document.getElementById('plannerView').classList.remove('visible');
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.querySelectorAll('.nav-links a')[0].classList.add('active');
+}
+
+function showPlanner() {
+  document.getElementById('searchView').style.display = 'none';
+  document.getElementById('compareView').classList.remove('visible');
+  document.getElementById('plannerView').classList.add('visible');
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  document.querySelectorAll('.nav-links a')[2].classList.add('active');
+  updatePlanner();
+}
+
+// ─── BUDGET PLANNER ───
+function addToPlanner(id) {
+  const p = providers.find(x => x.id === id);
+  if (!p) return;
+  if (plannedServices.find(x => x.id === id)) {
+    alert(p.name + ' is already in your planner.');
+    closeModal();
+    return;
+  }
+  plannedServices.push({ id: p.id, name: p.name, category: p.category, emoji: p.emoji, cost: p.priceMonthly, priceLabel: p.priceLabel });
+  closeModal();
+  showPlanner();
+  updatePlanner();
+}
+
+function removeFromPlanner(id) {
+  plannedServices = plannedServices.filter(p => p.id !== id);
+  updatePlanner();
+}
+
+function addCarePlan() {
+  const name = prompt('Name this care plan (e.g., "Mom", "Dad", "Spouse"):');
+  if (!name) return;
+  const tab = document.createElement('button');
+  tab.className = 'care-tab';
+  tab.textContent = name;
+  tab.setAttribute('data-plan', name.toLowerCase());
+  const tabs = document.getElementById('carePlanTabs');
+  tabs.insertBefore(tab, tabs.lastElementChild);
+  tab.onclick = () => {
+    document.querySelectorAll('.care-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+  };
+}
+
+function updatePlanner() {
+  const total = parseInt(document.getElementById('totalBudget').value) || 0;
+  const spent = plannedServices.reduce((s, p) => s + (p.cost || 0), 0);
+  const remaining = total - spent;
+  const pct = total > 0 ? Math.min(100, (spent / total) * 100) : 0;
+  const fill = document.getElementById('budgetMeterFill');
+  fill.style.width = pct + '%';
+  fill.style.background = pct > 90 ? 'var(--red)' : pct > 70 ? 'var(--yellow)' : 'var(--green)';
+  document.getElementById('budgetSpent').textContent = '$' + spent.toLocaleString();
+  document.getElementById('budgetRemaining').textContent = '$' + Math.max(0, remaining).toLocaleString();
+  const bigEl = document.getElementById('budgetRemainingBig');
+  bigEl.textContent = '$' + Math.max(0, remaining).toLocaleString() + ' left';
+  bigEl.style.color = remaining < 0 ? 'var(--red)' : remaining < total * 0.2 ? 'var(--yellow)' : 'var(--green)';
+
+  // Planned items list
+  const listEl = document.getElementById('plannedItems');
+  if (plannedServices.length === 0) {
+    listEl.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📋</div><div class="empty-state-text">No services planned yet. Open a provider and click "Add to Budget Planner".</div></div>`;
+  } else {
+    listEl.innerHTML = plannedServices.map(p => `
+      <div class="planned-item">
+        <div class="planned-item-info">
+          <div class="planned-item-name">${p.emoji} ${p.name}</div>
+          <div class="planned-item-detail">${p.priceLabel || '$' + (p.cost || 0).toLocaleString() + '/mo'}</div>
+        </div>
+        <div class="planned-item-cost">${p.cost > 0 ? '$' + p.cost.toLocaleString() : 'Free'}</div>
+        <button class="planned-item-remove" onclick="removeFromPlanner(${p.id})">🗑</button>
+      </div>
+    `).join('');
+  }
+
+  // Category chart
+  const catEl = document.getElementById('categoryChart');
+  const cats = {};
+  plannedServices.forEach(p => { cats[p.category] = (cats[p.category] || 0) + (p.cost || 0); });
+  const catColors = { retirement: '#9F7AEA', homecare: '#ED8936', fitness: '#48BB78', social: '#4299E1', community: '#667EEA', medical: '#FC8181', transport: '#A0AEC0', meal: '#F6E05E' };
+  const catLabels = { retirement: 'Retirement', homecare: 'Home Care', fitness: 'Fitness', social: 'Social', community: 'Community', medical: 'Medical', transport: 'Transport', meal: 'Meals' };
+  if (Object.keys(cats).length === 0) {
+    catEl.innerHTML = `<div style="text-align:center;padding:20px;color:var(--gray-400);font-size:14px;font-weight:600;">No spending tracked yet</div>`;
+  } else {
+    const maxVal = Math.max(...Object.values(cats));
+    catEl.innerHTML = Object.entries(cats).map(([cat, val]) => `
+      <div class="chart-bar-row">
+        <div class="chart-bar-label">${catLabels[cat] || cat}</div>
+        <div class="chart-bar-track"><div class="chart-bar-fill" style="width:${(val/maxVal)*100}%;background:${catColors[cat] || '#718096'}">$${val.toLocaleString()}</div></div>
+        <div class="chart-bar-amount">$${val.toLocaleString()}</div>
+      </div>
+    `).join('');
+  }
+
+  // Service type breakdown
+  const typeEl = document.getElementById('serviceTypeChart');
+  typeEl.innerHTML = catEl.innerHTML === `<div style="text-align:center;padding:20px;color:var(--gray-400);font-size:14px;font-weight:600;">No spending tracked yet</div>`
+    ? `<div class="empty-state" style="padding:20px 0;"><div style="font-size:30px;margin-bottom:6px;">📊</div><div style="font-size:13px;font-weight:600;color:var(--gray-400);">Add services to see breakdown</div></div>`
+    : catEl.innerHTML;
+}
+
+// ─── SLIDERS ───
+function updateRadius() {
+  const val = document.getElementById('radiusSlider').value;
+  document.getElementById('radiusDisplay').textContent = val + ' km';
+  document.getElementById('radiusText').textContent = val + ' km';
+  filterProviders();
+}
+
+function updateBudget() {
+  const val = parseInt(document.getElementById('budgetSlider').value);
+  document.getElementById('budgetDisplay').textContent = val > 0 ? '$' + val.toLocaleString() + '/mo' : 'Any Budget';
+  filterProviders();
+}
+
+// Close suggestions when clicking outside
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.smart-search')) {
+    document.getElementById('searchSuggestions').classList.remove('open');
+  }
+});
+
+// ─── START ───
+init();
+
+// Mobile menu toggle
+function toggleMobileMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.classList.toggle('open');
+  navLinks.classList.toggle('mobile-open');
+  document.body.style.overflow = navLinks.classList.contains('mobile-open') ? 'hidden' : '';
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.hamburger')?.classList.remove('open');
+    document.querySelector('.nav-links')?.classList.remove('mobile-open');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+</body>
+</html>
